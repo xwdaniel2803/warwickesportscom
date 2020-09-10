@@ -4491,6 +4491,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
+
+    #service > .container > .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
     ul.timeline:before {
         left: 40px;
     }
