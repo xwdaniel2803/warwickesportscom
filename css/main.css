@@ -2317,9 +2317,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .p2-gradient-bg,
 .discount-section-area .overlay-bg {
-    background-image: -moz-linear-gradient(0deg, #f43d6a 0%, #f574dd 100%);
-    background-image: -webkit-linear-gradient(0deg, #f43d6a 0%, #f574dd 100%);
-    background-image: -ms-linear-gradient(0deg, #f43d6a 0%, #f574dd 100%)
+    background-image: -moz-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
+    background-image: -webkit-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
+    background-image: -ms-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
 }
 
 .p2-gradient-color,
@@ -3066,20 +3066,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area {
-    background: #04091e;
-    padding-top: 100px
+    background: #030108;
+    padding-top: 100px;
 }
 
 .footer-area .footer-nav li {
-    margin-top: 18px
+    margin-top: 18px;
 }
 
 .footer-area .footer-nav li a {
-    color: #fff
+    color: #fff;
 }
 
 .footer-area .footer-nav li a:hover {
-    color: #988fff
+    color: #988fff;
 }
 
 .footer-area .primary-btn {
