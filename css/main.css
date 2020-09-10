@@ -4519,4 +4519,20 @@ body.mobile-nav-active #mobile-nav-toggle {
         left: -14px;
         right: auto;
     }
+    .video-container {
+        position: relative;
+        margin: auto;
+        padding-bottom: 56.25%;
+        padding-top: 35px;
+        height: 100%;
+        overflow: hidden;
+    }
+    .video-container iframe {
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 500px;
+    }
 }
