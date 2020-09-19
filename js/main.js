@@ -442,4 +442,15 @@ $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
 
+    // read from JSON //
+    $.getJSON('http://time.jsontest.com', function(data) {
+
+        var text = `Date: ${data.date}<br>
+                            Time: ${data.time}<br>
+                            Unix time: ${data.milliseconds_since_epoch}`
+
+
+        $(".mypanel").html(text);
+    });
+
 });

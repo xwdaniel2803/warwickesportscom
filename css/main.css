@@ -4497,6 +4497,15 @@ iframe {
     margin: auto;
 }
 
+.mypanel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
 .about_us_section {
     display: flex;
     flex-direction: column;
