@@ -21,22 +21,28 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="../css/linearicons.css">
-			<link rel="stylesheet" href="../css/font-awesome.min.css">
-			<link rel="stylesheet" href="../css/bootstrap.css">
-			<link rel="stylesheet" href="../css/magnific-popup.css">
-			<link rel="stylesheet" href="../css/nice-select.css">							
-			<link rel="stylesheet" href="../css/animate.min.css">
-			<link rel="stylesheet" href="../css/owl.carousel.css">
-			<link rel="stylesheet" href="../css/main.css">>
+		<!--CSS============================================= -->
+		<link rel="stylesheet" href="../css/linearicons.css">
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="../css/magnific-popup.css">
+		<link rel="stylesheet" href="../css/nice-select.css">							
+		<link rel="stylesheet" href="../css/animate.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.css">
+		<link rel="stylesheet" href="../css/main.css">
 
 
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+		
 		</head>
-		<body>	
+
+
+		<body>
+
+
+
             <header id="header" id="home" style="padding-bottom: 10px;">
             <div class="container main-menu" style="padding-top: 10px;">
                 <div class="row align-items-center justify-content-between d-flex">
@@ -58,10 +64,94 @@
             </div>
             </header><!-- #header -->
             
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">
+				<div class="container" >
+					<div class="row fullscreen d-flex align-items-center">
+						<div class="banner-content justify-content-center" style="margin-bottom: 20px;">
+							<h6 class="text-uppercase">#TeamWarwick</h6>
+							<h1>
+								Warwick Esports News			
+							</h1>
+						</div>	
+						
+																
+					</div>
+				</div>
+			</section>
+
+			<!-- news section-->
+			<section>
+				<div class="news-page">
+				
+					<div class="news-summary-container" onclick="window.location.href='news.html'">
+						<img src="../img/about-img.jpg" alt="" title="test1" />
+						<div class="news-summary">
+							<h1 class="title"> weekly 1</h1>
+							<h6 class="author"> Author 1</h6>
+							<p class="news-text">
+								Warwick Esports is number one in university UK esports. We help students play, learn and compete to become the best they can.
+							</p>
+						</div>
+						
+					</div>
+
+					<div class="news-summary-container" onclick="window.location.href='news.html'">
+						<img src="../img/bfl-preview.jpeg" alt="" title="test1" />
+						<div class="news-summary">
+							<h1 class="title"> weekly 1</h1>
+							<h6 class="author"> Author 1</h6>
+							<p class="news-text">
+								Warwick Esports is number one in university UK esports. We help students play, learn and compete to become the best they can.
+							</p>
+						</div>
+						
+					</div>
+
+					<div class="news-summary-container" onclick="window.location.href='news.html'">
+						<img src="../img/banner-bg.jpg" alt="" title="test1" />
+						<div class="news-summary">
+							<h1 class="title"> weekly 1</h1>
+							<h6 class="author"> Author 1</h6>
+							<p class="news-text">
+								Warwick Esports is number one in university UK esports. We help students play, learn and compete to become the best they can.
+							</p>
+						</div>
+						
+					</div>
+
+					<div class="news-summary-container" onclick="window.location.href='news.html'">
+						<img src="../img/LAN-5.jpg" alt="" title="test1" />
+						<div class="news-summary">
+							<h1 class="title"> weekly 1</h1>
+							<h6 class="author"> Author 1</h6>
+							<p class="news-text">
+								Warwick Esports is number one in university UK esports. We help students play, learn and compete to become the best they can.
+							</p>
+						</div>
+						
+					</div>
+
+					<div class="news-summary-container" onclick="window.location.href='news.html'">
+						<img src="../img/nsei-preview.jpeg" alt="" title="test1" />
+						<div class="news-summary">
+							<h1 class="title"> weekly 1</h1>
+							<h6 class="author"> Author 1</h6>
+							<p class="news-text">
+								Warwick Esports is number one in university UK esports. We help students play, learn and compete to become the best they can.
+							</p>
+						</div>
+						
+					</div>
+
+
+				</div>
+			</section>
+			<!-- reading from json
             <div class="mypanel"> </div>
 
             
-			
+			-->
 
 			<!-- Start discount-section Area -->
 			<section class="discount-section-area relative section-gap" id="contact">
@@ -102,6 +192,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</footer>
             </div>
 			<!-- End footer Area -->	
+
+			<!-- The core Firebase JS SDK is always required and must be listed first -->
+			<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
+			<!-- TODO: Add SDKs for Firebase products that you want to use
+				https://firebase.google.com/docs/web/setup#available-libraries -->
+			<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
+			<script> defer src="../js/init-firebase.js"></script>
 
 			<script src="../js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
