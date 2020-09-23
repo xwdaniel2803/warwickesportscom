@@ -4600,6 +4600,9 @@ iframe {
         height: 50%;
         float: none;
     }
+    .news-summary-container>.news-summary>.title {
+        padding-top: 5px;
+    }
     .about_us_container {
         width: 100%;
         height: 600px;
