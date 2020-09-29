@@ -29,16 +29,17 @@ if (mainContainer == null) {
                 ...doc.data(),
             }));
             data = data.reverse()
-            console.log(data)
+                // console.log(data)
 
             const html = summary(data)
             console.log(html)
             mainContainer.innerHTML = html;
-            for (doc_details of data) {
-                var doc_id = "news-id-" + doc_details.article_num
-                var element = document.getElementById(doc_id)
+            for (let i = 0; i < data.length; i++) {
+                console.log(data[i]);
+                var doc_id = "news-id-" + data[i].article_num;
+                var element = document.getElementById(doc_id);
                 element.addEventListener("click", function() {
-                    newPage(doc_details.id);
+                    newPage(data[i].id);
                 });
             }
         });
@@ -75,7 +76,8 @@ function summary(news) {
     var i = 0;
     var html = "";
     for (news_article of news) {
-        html += '<div class="news-summary-container" id=' + generatelink(news_article.article_num) + '> '
+        let id = generateid(news_article.article_num);
+        html += '<div class="news-summary-container" id=' + id + '> '
         if (i % 2 == 0) {
 
             html += '<img src=' + news_article.images[0] + 'alt = "" title = "' + news_article.title + '" />'
@@ -123,6 +125,6 @@ function summary(news) {
 }
 
 let createSummary = text => text.slice(0, 100)
-let generatelink = text => "news-id-" + text
+let generateid = text => "news-id-" + text
 let newPage = text =>
     window.location = "news.html?id=" + text
