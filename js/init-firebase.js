@@ -13,10 +13,6 @@ var firebaseConfig = {
 // Initialize Firebase
 var app = firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
-
-db.collection("cities").get().then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-        // doc.data() is never undefined for query doc snapshots
-        console.log(doc.id, " => ", doc.data());
-    });
-});
+const newsRef = firebase
+    .firestore()
+    .collection("news");
