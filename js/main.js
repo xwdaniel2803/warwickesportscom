@@ -110,7 +110,6 @@ $(document).ready(function() {
 
     //------- Mobile Nav  js --------//
 
-    console.log('This runs');
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({
             id: 'mobile-nav'
@@ -120,7 +119,6 @@ $(document).ready(function() {
             'id': ''
         });
 
-        alert($mobile_nav);
         $('body').append($mobile_nav);
         $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>');
         $('body').append('<div id="mobile-body-overly"></div>');
@@ -179,7 +177,7 @@ $(document).ready(function() {
 
                 if ($('body').hasClass('mobile-nav-active')) {
                     $('body').removeClass('mobile-nav-active');
-                    $('#mobile-nav-toggle i').toggleClass('lnr-times lnr-bars');
+                    $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
                     $('#mobile-body-overly').fadeOut();
                 }
                 return false;
