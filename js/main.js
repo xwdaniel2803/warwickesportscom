@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(".fullscreen").css("height", window_height)
     $(".fitscreen").css("height", fitscreen);
 
-    //------- Niceselect  js --------//  
+    //------- Niceselect  js --------//
 
     if (document.getElementById("default-select")) {
         $('select').niceSelect();
@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('select').niceSelect();
     };
 
-    //------- Lightbox  js --------//  
+    //------- Lightbox  js --------//
 
     $('.img-gal').magnificPopup({
         type: 'image',
@@ -36,7 +36,7 @@ $(document).ready(function() {
         fixedContentPos: false
     });
 
-    //------- Accordion  js --------//  
+    //------- Accordion  js --------//
 
     jQuery(document).ready(function($) {
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
         }
     });
 
-    //------- Circle Chart  js --------//  
+    //------- Circle Chart  js --------//
 
     if (document.getElementById("skills")) {
 
@@ -99,7 +99,7 @@ $(document).ready(function() {
 
     };
 
-    //------- Superfist nav menu  js --------//  
+    //------- Superfist nav menu  js --------//
 
     $('.nav-menu').superfish({
         animation: {
@@ -108,8 +108,9 @@ $(document).ready(function() {
         speed: 400
     });
 
-    //------- Mobile Nav  js --------//  
+    //------- Mobile Nav  js --------//
 
+    console.log('This runs');
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({
             id: 'mobile-nav'
@@ -118,6 +119,8 @@ $(document).ready(function() {
             'class': '',
             'id': ''
         });
+
+        alert($mobile_nav);
         $('body').append($mobile_nav);
         $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>');
         $('body').append('<div id="mobile-body-overly"></div>');
@@ -149,7 +152,7 @@ $(document).ready(function() {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
 
-    //------- Smooth Scroll  js --------//  
+    //------- Smooth Scroll  js --------//
 
     $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -210,7 +213,7 @@ $(document).ready(function() {
 
     });
 
-    //------- Header Scroll Class  js --------//  
+    //------- Header Scroll Class  js --------//
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -220,7 +223,7 @@ $(document).ready(function() {
         }
     });
 
-    //------- Owl Carusel  js --------//  
+    //------- Owl Carusel  js --------//
 
     $('.active-testimonial-carusel').owlCarousel({
         items: 3,
@@ -265,7 +268,7 @@ $(document).ready(function() {
         }
     });
 
-    //------- Timer Countdown  js --------//  
+    //------- Timer Countdown  js --------//
 
     if (document.getElementById("count")) {
 
@@ -300,7 +303,7 @@ $(document).ready(function() {
 
     }
 
-    //------- Google Map  js --------//  
+    //------- Google Map  js --------//
 
     if (document.getElementById("map")) {
         google.maps.event.addDomListener(window, 'load', init);
@@ -436,10 +439,29 @@ $(document).ready(function() {
         }
     }
 
-    //------- Mailchimp js --------//  
+    //------- Mailchimp js --------//
 
     $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
+
+    //------- Animate CSS -------//
+
+    /**************************
+     * FADE IN text to simulate loading in
+     **************************/
+
+    // // Selecting all the text on the header
+    // var header_text = document.querySelectorAll(".row.position-relative.align-items-center.justify-content-between.d-flex");
+    // // Selecting all the text on the home banner
+    // var banner_text = document.querySelectorAll(".banner-content.col-lg-7.col-md-6.justify-content-center > *");
+    //
+    // for (let h_t : header_text) {
+    //     h_t.classList.add('animated');
+    // };
+    //
+    // for (let b_t : banner_text) {
+    //     b_t.classList.add('animated');
+    // };
 
 });
