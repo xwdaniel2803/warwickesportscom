@@ -58,15 +58,18 @@ function createArticle(data) {
     // 		</p>
 
     var html = ''
+    html += '<div id="article-cover">'
     html += '<img src="' + data.images[0] + '" id="article-cover-img" alt="" title="' + data.title + '" />'
+    html += '</div>'
     html += '<h1 class="title">' + data.title + '</h1>'
     html += '<h6 class="author">' + data.author + '</h6>'
+    html += '<div id="article-content">'
     html += '<p class="news-text">' + data.text_blobs[0] + '</p>'
     for (var i = 1; i < data.text_blobs.length; i++) {
         html += '<img src="' + data.images[i] + '" alt="" title="' + data.title + '" />'
         html += '<p class="news-text">' + data.text_blobs[i] + '</p>'
-
     }
+    html += '</div>'
     return html
 
 

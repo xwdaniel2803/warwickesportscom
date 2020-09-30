@@ -4547,12 +4547,14 @@ iframe {
 .news-summary-container {
     display: flex;
     flex-direction: row;
-    margin: 20px 5px;
+    margin: 20px;
     justify-items: center;
     align-items: center;
-    border: solid;
-    border-style: outset;
     height: 300px;
+
+    -webkit-box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
+    box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
 }
 
 .news-summary-container:nth-child(2n+1) {
@@ -4602,12 +4604,12 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     min-height: 500px;
-    overflow: hidden;
+    margin-bottom: 300px;
 }
 
-.news-page-full>img {
+#article-content > img {
     display: flex;
-    width: 80%;
+    width: 60%;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -4617,16 +4619,26 @@ iframe {
     padding: 0px 100px;
 }
 
-.news-page-full > #article-cover-img{
-    width: 100%;
-    height: auto;
-    max-height: 50%;
+.news-page-full > #article-cover {
+    background-color: rgb(172, 0, 0);
+}
+
+#article-cover > #article-cover-img{
+    position: relative;
+    top: 220px;
+    display: flex;
+    width: 90%;
+    height: 550px;
+    overflow: hidden;
+    object-fit: cover;
     filter: brightness(50%);
+    margin: auto;
+    padding: 0px;
 }
 
 .news-page-full>.title {
     position: absolute;
-    top: 50vh;
+    top: 10vh;
     width: 100%;
     padding: 20px 0px;
     font-size: 50px;
@@ -4639,7 +4651,7 @@ iframe {
 
 .news-page-full>.author {
     position: absolute;
-    top: 65vh;
+    top: 23vh;
     width: 100%;
     padding-bottom: 20px;
     color: #9e9e9e;
@@ -4649,16 +4661,26 @@ iframe {
     font-size: 2em;
 }
 
-.news-page-full>.news-text {
-    width: 80%;
-    margin-left :auto;
+.news-page-full > #article-content {
+    position: relative;
+    top: 250px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: white;  */
+}
+
+#article-content >.news-text {
+    width: 60%;
+    margin-left: auto;
     margin-right: auto;
     color: black;
-    font-size: large;
+    font-size: 20px;
     padding: 5px;
     text-align: left;
     justify-content: center;
     align-items: center;
+    line-height: 1.8;
 }
 
 @media screen and (max-width: 767px) {
@@ -4672,10 +4694,6 @@ iframe {
     .news-page-full>.author {
         top: 32vh;
         font-size: 22px;
-    }
-
-    .news-page-full>#article-cover-img {
-        height: 100%;
     }
 
     .news-page-full>img {
