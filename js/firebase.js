@@ -58,7 +58,7 @@ function createArticle(data) {
     // 		</p>
 
     var html = ''
-    html += '<img src="' + data.images[0] + '" alt="" title="' + data.title + '" />'
+    html += '<img src="' + data.images[0] + '" id="article-cover-img" alt="" title="' + data.title + '" />'
     html += '<h1 class="title">' + data.title + '</h1>'
     html += '<h6 class="author">' + data.author + '</h6>'
     html += '<p class="news-text">' + data.text_blobs[0] + '</p>'
@@ -78,7 +78,7 @@ function summary(news) {
     for (news_article of news) {
         let id = generateid(news_article.article_num);
         html += '<div class="news-summary-container" id=' + id + '> '
-        if (i % 2 == 0) {
+        // if (i % 2 == 0) {
 
             html += '<img src=' + news_article.images[0] + 'alt = "" title = "' + news_article.title + '" />'
             html += '<div class = "news-summary" >'
@@ -87,18 +87,18 @@ function summary(news) {
             html += '<p class = "news-text">' + createSummary(news_article.text_blobs[0]) + '</p>'
             html += '</div> </div>'
 
-        } else {
+        // } else {
 
-            html += '<div class = "news-summary" >'
-            html += '<h1 class = "title">' + news_article.title + '</h1>'
-            html += '<h6 class = "author">' + news_article.author + '</h6>'
-            html += '<p class = "news-text">' + createSummary(news_article.text_blobs[0]) + '</p>'
-            html += '</div>'
-            html += '<img src=' + news_article.images[0] + 'alt = "" title = "' + news_article.title + '" />'
-            html += '</div>'
+        //     html += '<div class = "news-summary" >'
+        //     html += '<h1 class = "title">' + news_article.title + '</h1>'
+        //     html += '<h6 class = "author">' + news_article.author + '</h6>'
+        //     html += '<p class = "news-text">' + createSummary(news_article.text_blobs[0]) + '</p>'
+        //     html += '</div>'
+        //     html += '<img src=' + news_article.images[0] + 'alt = "" title = "' + news_article.title + '" />'
+        //     html += '</div>'
 
 
-        }
+        // }
 
 
         i += 1

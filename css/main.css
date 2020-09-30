@@ -4555,6 +4555,14 @@ iframe {
     height: 300px;
 }
 
+.news-summary-container:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.news-summary-container:nth-child(2n) {
+    flex-direction: row;
+}
+
 .news-summary-container>img {
     height: 100%;
     width: 33.3%;
@@ -4591,52 +4599,99 @@ iframe {
 
 .news-page-full {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 500px;
     overflow: hidden;
 }
 
 .news-page-full>img {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 50%;
+    padding: 0px 100px;
+}
+
+.news-page-full > #article-cover-img{
     width: 100%;
     height: auto;
     max-height: 50%;
+    filter: brightness(50%);
 }
 
 .news-page-full>.title {
+    position: absolute;
+    top: 50vh;
+    width: 100%;
     padding: 20px 0px;
     font-size: 50px;
     text-align: center;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .news-page-full>.author {
-    padding: 10px 0px;
-    color: gray;
+    position: absolute;
+    top: 65vh;
+    width: 100%;
+    padding-bottom: 20px;
+    color: #9e9e9e;
     text-align: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    font-size: 2em;
 }
 
 .news-page-full>.news-text {
+    width: 80%;
+    margin-left :auto;
+    margin-right: auto;
     color: black;
     font-size: large;
     padding: 5px;
     text-align: left;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
-    .news-page-full>.cover-photo>img {
+
+    .news-page-full>.title {
+        top: 25vh;
+        padding: 5px 0px;
+        font-size: 26px;
+    }
+    
+    .news-page-full>.author {
+        top: 32vh;
+        font-size: 22px;
+    }
+
+    .news-page-full>#article-cover-img {
         height: 100%;
     }
+
+    .news-page-full>img {
+        width: 75%;
+    }
+
     .news-summary-container {
         flex-direction: column;
         height: 40%;
     }
+
+    .news-summary-container:nth-child(2n+1),
+    .news-summary-container:nth-child(2n) {
+        flex-direction: column;
+    }
+    
     .news-summary-container>img {
         width: 100%;
         height: 50%;
