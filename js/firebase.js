@@ -10,7 +10,7 @@ if (mainContainer == null) {
     docRef.get().then(function(doc) {
         if (doc.exists) {
             var html = createArticle(doc.data());
-            console.log(html);
+            // console.log(html);
             mainContainer.innerHTML = html;
         } else {
             // doc.data() will be undefined in this case
@@ -32,10 +32,10 @@ if (mainContainer == null) {
                 // console.log(data)
 
             const html = summary(data)
-            console.log(html)
+            // console.log(html)
             mainContainer.innerHTML = html;
             for (let i = 0; i < data.length; i++) {
-                console.log(data[i]);
+                // console.log(data[i]);
                 var doc_id = "news-id-" + data[i].article_num;
                 var element = document.getElementById(doc_id);
                 element.addEventListener("click", function() {
