@@ -419,6 +419,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 120px 0
 }
 
+.discount-section-area .overlay-bg {
+    background-image: -moz-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
+    background-image: -webkit-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
+    background-image: -ms-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
+}
+
 .overlay {
     position: absolute;
     left: 0;
@@ -495,6 +501,46 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
+.single-service h4 {
+    padding: 20px 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    font-size: 17px
+}
+
+.single-service:hover {
+    cursor: pointer
+}
+
+.single-service:hover h4 {
+    color: #988fff
+}
+
+.single-service .thumb {
+    overflow: hidden
+}
+
+.single-service .thumb img {
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+
+.single-service:hover .thumb img {
+    transform: scale(1.1) rotate(-2deg)
+}
+
+@media (max-width: 960px) {
+    .single-service {
+        text-align: center;
+        margin-bottom: 30px
+    }
+}
+
 .home-about-area {
     background-color: #f9f9ff;
     position: relative;
@@ -549,8 +595,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .discount-section-area {
     position: relative;
-    background: url(../img/discount-bg.jpg) center;
-    background-size: cover
 }
 
 .discount-section-area .overlay-bg {
@@ -583,24 +627,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 300
 }
 
-.discount-section-area .discount-right .form-control::placeholder {
-    color: #fff
-}
-
-.discount-section-area .discount-right .form-control:focus {
-    box-shadow: none !important
-}
-
-.discount-section-area .discount-right .genric-btn {
-    font-size: 14px
-}
-
-.discount-section-area .discount-right .genric-btn:hover {
-    background-color: transparent;
-    color: #fff;
-    border-color: #fff
-}
-
 .footer-area {
     background: #04091e;
     padding-top: 100px
@@ -609,6 +635,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer-bottom {
     padding-top: 40px;
     margin-top: 20px
+}
+
+.section-top-border {
+    padding: 50px 0;
+    border-top: 1px dotted #eee
 }
 
 .link-nav {
