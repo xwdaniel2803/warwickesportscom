@@ -10,7 +10,7 @@ if (mainContainer == null) {
     docRef.get().then(function(doc) {
         if (doc.exists) {
             var html = createArticle(doc.data());
-            console.log(html);
+            // console.log(html);
             mainContainer.innerHTML = html;
         } else {
             // doc.data() will be undefined in this case
@@ -32,10 +32,10 @@ if (mainContainer == null) {
                 // console.log(data)
 
             const html = summary(data)
-            console.log(html)
+            // console.log(html)
             mainContainer.innerHTML = html;
             for (let i = 0; i < data.length; i++) {
-                console.log(data[i]);
+                // console.log(data[i]);
                 var doc_id = "news-id-" + data[i].article_num;
                 var element = document.getElementById(doc_id);
                 element.addEventListener("click", function() {
@@ -58,15 +58,18 @@ function createArticle(data) {
     // 		</p>
 
     var html = ''
+    html += '<div id="article-cover">'
     html += '<img src="' + data.images[0] + '" id="article-cover-img" alt="" title="' + data.title + '" />'
+    html += '</div>'
     html += '<h1 class="title">' + data.title + '</h1>'
     html += '<h6 class="author">' + data.author + '</h6>'
+    html += '<div id="article-content">'
     html += '<p class="news-text">' + data.text_blobs[0] + '</p>'
     for (var i = 1; i < data.text_blobs.length; i++) {
         html += '<img src="' + data.images[i] + '" alt="" title="' + data.title + '" />'
         html += '<p class="news-text">' + data.text_blobs[i] + '</p>'
-
     }
+    html += '</div>'
     return html
 
 
