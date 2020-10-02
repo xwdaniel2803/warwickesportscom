@@ -977,6 +977,7 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0px 10px;
 }
 
 .news-page-full {
