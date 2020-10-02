@@ -1008,7 +1008,7 @@ iframe {
 
 #article-cover>#article-cover-img {
     position: relative;
-    top: 220px;
+    top: 240px;
     display: flex;
     width: 90vw;
     height: 65vh;
@@ -1034,7 +1034,7 @@ iframe {
 
 .news-page-full>.author {
     position: absolute;
-    top: 23vh;
+    top: 20vh;
     width: 100%;
     padding-bottom: 20px;
     color: #9e9e9e;
@@ -1202,12 +1202,12 @@ iframe {
         height: 280px;
     }
     #article-cover>#article-cover-img {
-        top: 150px;
+        top: 200px;
         width: 75%;
         height: 250px;
     }
     .news-page-full>#article-content {
-        top: 130px;
+        top: 180px;
     }
     #article-content>.news-text {
         width: 80%;
@@ -1234,7 +1234,7 @@ iframe {
         font-size: x-large;
     }
     .about_us_container {
-        background-image width: 100%;
+        width: 100%;
         height: 600px;
     }
     iframe {
