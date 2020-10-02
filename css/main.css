@@ -900,6 +900,9 @@ iframe {
     z-index: 10;
     width: 100%;
     height: 780px;
+    background-image: url(../img/banner-bg.jpg);
+    background-size: cover;
+    padding: 0px 10px;
 }
 
 .about_us_container>.about_us_vid {
@@ -1165,7 +1168,7 @@ iframe {
         font-size: x-large;
     }
     .about_us_container {
-        width: 100%;
+        background-image width: 100%;
         height: 600px;
     }
     iframe {
