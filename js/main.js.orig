@@ -95,6 +95,11 @@ $(document).ready(function() {
         });
     }
 
+<<<<<<< HEAD
+    };
+
+=======
+>>>>>>> Iesa-testing
     //------- Superfist nav menu  js --------//
 
     $(".nav-menu").superfish({
@@ -487,6 +492,28 @@ $(document).ready(function() {
         $("#mc_embed_signup").find("form").ajaxChimp();
     });
 
+<<<<<<< HEAD
+    //------- Animate CSS -------//
+
+    /**************************
+     * FADE IN text to simulate loading in
+     **************************/
+
+    // // Selecting all the text on the header
+    // var header_text = document.querySelectorAll(".row.position-relative.align-items-center.justify-content-between.d-flex");
+    // // Selecting all the text on the home banner
+    // var banner_text = document.querySelectorAll(".banner-content.col-lg-7.col-md-6.justify-content-center > *");
+    //
+    // for (let h_t : header_text) {
+    //     h_t.classList.add('animated');
+    // };
+    //
+    // for (let b_t : banner_text) {
+    //     b_t.classList.add('animated');
+    // };
+
+});
+=======
 
 
     // read from firestore //
@@ -502,3 +529,4 @@ $(document).ready(function() {
         $(".mypanel").html(text);
     });
 });
+>>>>>>> Iesa-testing
