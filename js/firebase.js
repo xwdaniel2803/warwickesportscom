@@ -32,7 +32,7 @@ if (mainContainer == null) {
                 // console.log(data)
 
             const html = summary(data)
-            // console.log(html)
+                // console.log(html)
             mainContainer.innerHTML = html;
             for (let i = 0; i < data.length; i++) {
                 // console.log(data[i]);
@@ -81,14 +81,14 @@ function summary(news) {
     for (news_article of news) {
         let id = generateid(news_article.article_num);
         html += '<div class="news-summary-container" id=' + id + '> '
-        // if (i % 2 == 0) {
+            // if (i % 2 == 0) {
 
-            html += '<img src=' + news_article.images[0] + 'alt = "" title = "' + news_article.title + '" />'
-            html += '<div class = "news-summary" >'
-            html += '<h1 class = "title">' + news_article.title + '</h1>'
-            html += '<h6 class = "author">' + news_article.author + '</h6>'
-            html += '<p class = "news-text">' + createSummary(news_article.text_blobs[0]) + '</p>'
-            html += '</div> </div>'
+        html += '<img src=' + news_article.images[0] + 'alt = "" title = "' + news_article.title + '" />'
+        html += '<div class = "news-summary" >'
+        html += '<h1 class = "title">' + news_article.title + '</h1>'
+        html += '<h6 class = "author">' + news_article.author + '</h6>'
+        html += '<p class = "news-text">' + createSummary(news_article.text_blobs[0]) + '</p>'
+        html += '</div> </div>'
 
         // } else {
 
@@ -127,7 +127,7 @@ function summary(news) {
     return html;
 }
 
-let createSummary = text => text.slice(0, 100)
+let createSummary = text => text.slice(0, 300)
 let generateid = text => "news-id-" + text
 let newPage = text =>
     window.location = "news.html?id=" + text
