@@ -1,3 +1,12 @@
+/**** 
+*   TODO:
+* 1. Add Lazy loading to news article page - AL
+* 2. Adjust timeline for iPad sizes (larger) - Iesa
+* 4. Dark mode inline with browser settings - AL
+*
+*/
+
+
 ::-moz-selection,
 ::selection {
     background-color: #988fff;
@@ -201,6 +210,7 @@ h6 {
     padding: 0;
     margin: 0
 }
+
 
 @media (max-width: 768px) {
     #header #logo h1 {
@@ -578,10 +588,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 17px
 }
 
-.single-service:hover {
-    cursor: pointer
-}
-
 .single-service:hover h4 {
     color: #988fff
 }
@@ -923,6 +929,7 @@ iframe {
 }
 
 .news-summary-container {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     margin: 20px;
@@ -1008,7 +1015,7 @@ iframe {
 
 #article-cover>#article-cover-img {
     position: relative;
-    top: 280px;
+    top: 240px;
     display: flex;
     width: 90vw;
     height: 65vh;
@@ -1046,7 +1053,7 @@ iframe {
 
 .news-page-full>#article-content {
     position: relative;
-    top: 290px;
+    top: 250px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -1103,6 +1110,9 @@ iframe {
 
 .history-section {
     text-align: center;
+    width: 80%;
+    font-size: 1.2em;
+    margin: auto;
 }
 
 .history-section>h1 {
@@ -1113,10 +1123,14 @@ iframe {
     display: flex;
     flex-direction: row;
     text-align: left;
+    margin: 10px 0px;
 }
 
-.history-section>.history-details>p {
-    margin: 10px 20px;
+.history-details > .para-left,
+.history-details > .para-right {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 
@@ -1190,12 +1204,12 @@ iframe {
         flex-direction: column;
     }
     .news-page-full>.title {
-        top: 8vh;
+        top: 11vh;
         padding: 5px 0px;
         font-size: 26px;
     }
     .news-page-full>.author {
-        top: 13vh;
+        top: 17vh;
         font-size: 22px;
     }
     .news-page-full>#article-cover {
@@ -1293,7 +1307,7 @@ iframe {
     }
     .news-page-full>.title {
         top: 60px;
-        padding: 10px 10px;
+        padding: 10px 0px;
         font-size: 20px;
     }
     .news-page-full>.author {
