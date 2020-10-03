@@ -425,7 +425,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 120px 0
 }
 
-.discount-section-area .overlay-bg {
+#contact {
     background-image: -moz-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
     background-image: -webkit-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
     background-image: -ms-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
