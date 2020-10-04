@@ -1090,7 +1090,7 @@ iframe {
     -moz-box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
     box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
     margin: 20px 0px;
-    height: auto;
+    height: 370px;
     display: inline-block;
 }
 
@@ -1112,11 +1112,11 @@ iframe {
     background-image: -ms-linear-gradient(0deg, #C680C9 0%, #5B3069 100%); */
 }
 
-.exec-details>img {
-    width: 100%;
+.exec-details img {
+    max-height: 100%;
     max-width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 70%;
+    width: 100%;
 }
 
 .history-section {
@@ -1263,7 +1263,6 @@ iframe {
     }
     iframe {
         position: relative;
-        top: 50px;
         height: 90%;
         width: 90%;
     }
