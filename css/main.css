@@ -1073,6 +1073,12 @@ iframe {
     line-height: 1.8;
 }
 
+#special-p {
+    box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
+    border: solid;
+    padding: 0px 10px;
+}
+
 .exec-area {
     width: 80%;
     min-height: 600px;
