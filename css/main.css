@@ -1026,7 +1026,7 @@ iframe {
 
 .news-page-full>.title {
     position: absolute;
-    top: 10vh;
+    top: 70px;
     width: 100%;
     padding: 20px 0px;
     font-size: 50px;
@@ -1039,7 +1039,7 @@ iframe {
 
 .news-page-full>.author {
     position: absolute;
-    top: 20vh;
+    top: 170px;
     width: 100%;
     padding-bottom: 20px;
     color: #9e9e9e;
@@ -1202,12 +1202,11 @@ iframe {
         flex-direction: column;
     }
     .news-page-full>.title {
-        top: 11vh;
         padding: 5px 0px;
         font-size: 26px;
     }
     .news-page-full>.author {
-        top: 17vh;
+        top: 32vh;
         font-size: 22px;
     }
     .news-page-full>#article-cover {

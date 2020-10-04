@@ -13,6 +13,10 @@ var firebaseConfig = {
 // Initialize Firebase
 var app = firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
+var storage = firebase.storage();
+
+var storageRef = storage.ref();
+var imagesRef = storageRef.child('images');
 const newsRef = firebase
     .firestore()
-    .collection("news");
+    .collection("news-website");
