@@ -1082,6 +1082,8 @@ iframe {
     -moz-box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
     box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
     margin: 20px 0px;
+    max-height: 500px;
+    display: inline-block;
 }
 
 .exec-name {
@@ -1104,6 +1106,9 @@ iframe {
 
 .exec-details>img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .history-section {
@@ -1206,7 +1211,7 @@ iframe {
         font-size: 26px;
     }
     .news-page-full>.author {
-        top: 32vh;
+        top: 26vh;
         font-size: 22px;
     }
     .news-page-full>#article-cover {
