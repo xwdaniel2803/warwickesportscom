@@ -1144,6 +1144,10 @@ iframe {
     margin: auto;
 }
 
+#home-title {
+    margin: 0px;
+}
+
 
 /* .history-section>p {
     margin: 5px 20px;
@@ -1211,6 +1215,9 @@ iframe {
 }
 
 @media screen and (max-width: 769px) {
+    #home-title {
+        margin: 70px 0px;
+    }
     .history-section>.history-details {
         flex-direction: column;
     }
