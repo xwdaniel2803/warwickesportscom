@@ -6,7 +6,6 @@
 *
 */
 
-
 ::-moz-selection,
 ::selection {
     background-color: #988fff;
@@ -210,7 +209,6 @@ h6 {
     padding: 0;
     margin: 0
 }
-
 
 @media (max-width: 768px) {
     #header #logo h1 {
@@ -1074,8 +1072,8 @@ iframe {
 }
 
 .exec-area {
-    width: 100%;
-    min-height: 500px;
+    width: 80%;
+    min-height: 600px;
     margin: auto;
 }
 
@@ -1126,8 +1124,8 @@ iframe {
     margin: 10px 0px;
 }
 
-.history-details > .para-left,
-.history-details > .para-right {
+.history-details>.para-left,
+.history-details>.para-right {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -1259,6 +1257,7 @@ iframe {
     }
     .about_us_container {
         flex-direction: column;
+        height: 100%;
     }
     .about_us_container>.about_us_vid,
     .about_us_container>.about_us_section {
@@ -1266,6 +1265,9 @@ iframe {
     }
     .about_us_section>h1 {
         margin-top: 50px;
+    }
+    .about_us_section>a {
+        margin-top: 20px;
     }
     ul.timeline:before {
         left: 40px;
