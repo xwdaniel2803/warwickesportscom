@@ -978,11 +978,13 @@ iframe {
     margin: 10px 0px;
 }
 
-.news-summary-container>.news-summary>p {
+.news-summary-container>.news-summary>.news-summary-text {
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0px 10px;
+    font-size: 1.3em;
+    line-height: 1.8;
 }
 
 .news-page-full {
@@ -1082,7 +1084,7 @@ iframe {
     -moz-box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
     box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
     margin: 20px 0px;
-    max-height: 500px;
+    height: auto;
     display: inline-block;
 }
 

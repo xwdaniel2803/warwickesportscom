@@ -101,7 +101,7 @@ function summary(news) {
         html += '<h1 class = "title">' + news_article.title + "</h1>";
         html += '<h6 class = "author">' + news_article.author + "</h6>";
         html +=
-            '<div class = "news-text">' +
+            '<div class = "news-summary-text">' +
             news_article.summary +
             "</div>";
         html += "</div> </div>";
