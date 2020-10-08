@@ -10,11 +10,29 @@ $(document).ready(function() {
     $(".fullscreen").css("height", window_height);
     $(".fitscreen").css("height", fitscreen);
 
+    // ------- Dark THEME --------//
+    const pref_dark_theme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    // lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+    // darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+    
+    if (pref_dark_theme.matches) {
+        $("#header").addClass("dark-theme");
+        $("#nav-menu-container > ul").addClass("dark-theme");       
+        // lightSchemeIcon.remove();
+        // document.head.append(darkSchemeIcon);
+    }
+    // } else {
+    //     document.head.append(lightSchemeIcon);
+    //     darkSchemeIcon.remove();
+    // }
+
     //------- Niceselect  js --------//
 
     if (document.getElementById("default-select")) {
         $("select").niceSelect();
     }
+
     if (document.getElementById("service-select")) {
         $("select").niceSelect();
     }
