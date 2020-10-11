@@ -1085,6 +1085,12 @@ iframe {
     margin: auto;
 }
 
+.exec-area>ul,
+.exec-area>ul>div {
+    position: relative;
+    width: 100%;
+}
+
 .exec-details {
     -webkit-box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 6px 6px 3px 0px rgba(119, 119, 119, 0.75);
@@ -1096,17 +1102,20 @@ iframe {
 
 .exec-name {
     min-height: 80px;
+    font-size: 1rem;
     text-align: center;
     padding: 20px 0px;
 }
 
 .exec-name>h3 {
     padding: 5px 0x;
+    font-size: 1.4vw;
     color: black;
 }
 
 .exec-name>h6 {
     color: #C680C9;
+    font-size: .8vw;
     /* background-image: -moz-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
     background-image: -webkit-linear-gradient(0deg, #C680C9 0%, #5B3069 100%);
     background-image: -ms-linear-gradient(0deg, #C680C9 0%, #5B3069 100%); */
@@ -1117,6 +1126,7 @@ iframe {
     max-width: 100%;
     height: 70%;
     width: 100%;
+    object-fit: cover;
 }
 
 .history-section {
