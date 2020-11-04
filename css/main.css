@@ -683,11 +683,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 15px
 }
 
-.footer-area {
-    background: #04091e;
-    padding-top: 100px
-}
-
 .footer-bottom {
     padding-top: 40px;
     margin-top: 20px
@@ -1158,6 +1153,41 @@ iframe {
     margin: 0px;
 }
 
+.footer-area {
+    background: #04091e;
+}
+
+#footer-text {
+    padding: 40px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+}
+
+.partner-section {
+    background: #04091e;
+    padding: 20px 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.partner-section>p {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.partner-section>img {
+    max-width: 256px;
+    height: auto;
+}
+
+.footer-image>img {
+    width: 256px;
+    height: auto;
+}
+
 
 /* .history-section>p {
     margin: 5px 20px;
@@ -1325,6 +1355,10 @@ iframe {
         left: -14px;
         right: auto;
     }
+    #footer-text {
+        padding: 20px 0px;
+        padding-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -1352,4 +1386,28 @@ iframe {
         font-size: 13px;
         width: 80%;
     }
+    .footer-area {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    .footer-image {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .partner-section {
+        display: none;
+    }
+    .footer-area {
+        text-align: center;
+    }
+}
+
+
+/* <section class="partner-section">
+      <img src="../img/HyperX2.png" />
+    </section> */
