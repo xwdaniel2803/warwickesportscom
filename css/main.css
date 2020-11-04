@@ -1013,7 +1013,7 @@ iframe {
     top: 240px;
     display: flex;
     width: 90vw;
-    height: 65vh;
+    height: auto;
     overflow: hidden;
     object-fit: cover;
     filter: drop-shadow(0 0 0.75rem black);
@@ -1368,7 +1368,7 @@ iframe {
         height: 230px;
     }
     #article-cover>#article-cover-img {
-        height: 160px;
+        height: 260px;
         top: 150px;
     }
     .news-page-full>.title {
@@ -1382,7 +1382,7 @@ iframe {
         font-size: 15px;
     }
     .news-page-full>#article-content {
-        top: 90px;
+        top: 160px;
     }
     #article-content>.news-text {
         font-size: 13px;
