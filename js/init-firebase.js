@@ -19,4 +19,4 @@ var storageRef = storage.ref();
 var imagesRef = storageRef.child('images');
 const newsRef = firebase
     .firestore()
-    .collection("news-website");
+    .collection("news");
