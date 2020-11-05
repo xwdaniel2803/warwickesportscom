@@ -1154,7 +1154,7 @@ iframe {
 }
 
 .footer-area {
-    background: #04091e;
+    background: #161616;
 }
 
 #footer-text {
@@ -1164,12 +1164,12 @@ iframe {
 }
 
 .partner-section {
-    background: #04091e;
+    background: #161616;
     padding: 0px;
     display: flex;
     flex-direction: row;
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -1179,7 +1179,8 @@ iframe {
 }
 
 .partner-section>img {
-    margin: 20px;
+    margin: 30px;
+    margin-bottom: 0px;
     max-width: 256px;
     width: auto;
     /* height: auto; */
@@ -1396,6 +1397,12 @@ iframe {
     }
     .partner-section {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partner-section>img {
+        margin-top: 50px;
     }
     #footer-text {
         text-align: center;
