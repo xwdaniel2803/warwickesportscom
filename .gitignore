@@ -20,3 +20,6 @@ venv.bak/
 # Keys
 cert.pem
 key.pem
+
+# socket
+warwickesportscom.sock
