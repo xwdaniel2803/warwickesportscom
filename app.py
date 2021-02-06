@@ -34,6 +34,6 @@ def timeline():
 
 if __name__ == "__main__":
     # _thread.start_new_thread(pygame_start, ())
-    app.run(host='0.0.0.0',port=80)
+    app.run(host='localhost',port=5000)
     
     
