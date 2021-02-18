@@ -50,14 +50,7 @@ if (mainContainer == null) {
 }
 
 function createArticle(data) {
-    // <div class="cover-photo" style="background-image: ">
-    //     <img src="../img/nsei-preview.jpeg" alt="" title="test1" />
-    // </div>
-    // <h1 class="title"> weekly 1</h1>
-    // <h6 class="author"> Author 1</h6>
-    // <p class="news-text">
-    //     Warwick Esports is number one in university UK esports. We help students play, learn and compete to become the best they can.
-    // 		</p>
+    
 
     var html = "";
     var image = getImage(data.images[0]);
@@ -89,8 +82,6 @@ function summary(news) {
     for (news_article of news) {
         let id = generateid(news_article.id);
         html += '<div class="news-summary-container" id=' + id + "> ";
-        // if (i % 2 == 0) {
-        // console.log(news_article.images[0])
         var image = getImage(news_article.images[0]);
         html +=
             "<img src=" +
@@ -107,37 +98,9 @@ function summary(news) {
             "</div>";
         html += "</div> </div>";
 
-        // } else {
-
-        //     html += '<div class = "news-summary" >'
-        //     html += '<h1 class = "title">' + news_article.title + '</h1>'
-        //     html += '<h6 class = "author">' + news_article.author + '</h6>'
-        //     html += '<p class = "news-text">' + createSummary(news_article.text_blobs[0]) + '</p>'
-        //     html += '</div>'
-        //     html += '<img src=' + news_article.images[0] + 'alt = "" title = "' + news_article.title + '" />'
-        //     html += '</div>'
-
-        // }
-
         i += 1;
 
-        // < div class = "news-summary-container" onclick = "window.location.href='news.html'" >
-        //     <
-        //     img src = "../img/about-img.jpg"
-        // alt = ""
-        // title = "test1" / >
-        //     <
-        //     div class = "news-summary" >
-        //     <
-        //     h1 class = "title" > weekly 1 < /h1> <
-        //     h6 class = "author" > Author 1 < /h6> <
-        //     p class = "news-text" >
-        //     Warwick Esports is number one in university UK esports.We help students play, learn and compete to become the best they can. <
-        //     /p> <
-        //     /div>
-
-        //     <
-        //     /div>
+        
     }
     return html;
 }
@@ -146,19 +109,3 @@ let createSummary = (text) => text.slice(0, 300);
 let generateid = (text) => "news-id-" + text;
 let newPage = (text) => (window.location = "news/news.html?id=" + text);
 let getImage = (text) => text;
-/*
-function getImage(imageName) {
-    console.log(imageName)
-    let finalImg = ""
-    imagesRef.child(imageName)
-        .getDownloadURL().then((url) => {
-            finalImg = url;
-            console.log(url)
-        }).catch((error) => {
-            // Handle any errors
-            console.log(error)
-        });
-    console.log(finalImg)
-    return finalImg;
-}
-*/
