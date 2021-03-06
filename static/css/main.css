@@ -1106,6 +1106,7 @@ iframe {
     padding: 5px 0x;
     font-size: 1.4vw;
     color: black;
+    white-space: nowrap;
 }
 
 .exec-name>h6 {
