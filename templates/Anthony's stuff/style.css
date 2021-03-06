@@ -1,0 +1,59 @@
+.table-responsive {
+    width: 60vw;
+    margin: auto;
+}
+
+#filters {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+#filters > div {
+    margin: 10px;
+    width: 20%;
+    height: 20%;
+}
+
+.select-outline select:focus {
+    box-shadow: 0 0 2px 2px#B5AFB3;
+    border-color: #B5AFB3;
+}
+
+.input-group input:hover{
+    box-shadow: 0 0 2px 2px#B5AFB3;
+    border-color: #B5AFB3;
+}
+
+.input-group input:focus{
+    box-shadow: 0 0 2px 2px#6c757d;
+    border-color: #6c757d;
+}
+
+ul.pagination li a {
+    border-color: transparent;
+}
+
+ul.pagination li:hover a {
+    background-color: #5B3069;
+    border-color: #5B3069;
+    color: white !important;
+}
+
+.page-item.active .page-link {
+    background-color: #5B3069;
+    border-color: #5B3069;
+}
+
+.form-outline input:focus {
+    box-shadow: 0 0 2px 2px #5B3069;
+    border-color: #5B3069;
+}
+
+.fas.fa-search {
+    background-color: white;
+}
+
+
